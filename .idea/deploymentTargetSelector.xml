@@ -2,10 +2,10 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="reviewapp">
+      <SelectionState runConfigName="clicker">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="clicker">
+      <SelectionState runConfigName="reviewapp">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="app">

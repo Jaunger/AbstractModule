@@ -28,7 +28,7 @@ public class ReviewWriteActivity extends AbstractActivity {
 
 
         initViews();
-
+        setBackground(R.drawable.img_background,imageView);
         updateCompany();
 
         submitNextButton.setOnClickListener(v -> {

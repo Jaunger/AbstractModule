@@ -29,10 +29,7 @@ public class ClickActivity extends AbstractActivity {
 
         initView();
 
-
-        counterText.setTextColor(ContextCompat.getColor(this, R.color.white));
-        nameInput.setTextColor(ContextCompat.getColor(this, R.color.white));
-        nameInput.setHintTextColor(ContextCompat.getColor(this, R.color.white));
+        setBackground(R.drawable.img_back,imageView);
 
         clickButton.setOnClickListener(v -> {
             clickCount++;
