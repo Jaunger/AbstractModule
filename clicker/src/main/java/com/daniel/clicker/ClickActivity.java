@@ -34,7 +34,6 @@ public class ClickActivity extends AbstractActivity {
         nameInput.setTextColor(ContextCompat.getColor(this, R.color.white));
         nameInput.setHintTextColor(ContextCompat.getColor(this, R.color.white));
 
-        setBackground(R.drawable.img_background, imageView);
         clickButton.setOnClickListener(v -> {
             clickCount++;
             counterText.setText("Clicks: " + clickCount);

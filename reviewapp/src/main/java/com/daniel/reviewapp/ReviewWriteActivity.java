@@ -30,7 +30,6 @@ public class ReviewWriteActivity extends AbstractActivity {
         initViews();
 
         updateCompany();
-        setBackground(R.drawable.img_back, imageView);
 
         submitNextButton.setOnClickListener(v -> {
             String review = reviewInput.getText().toString().trim();
