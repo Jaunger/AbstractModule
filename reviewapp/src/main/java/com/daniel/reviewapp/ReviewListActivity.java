@@ -1,6 +1,7 @@
 package com.daniel.reviewapp;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,11 @@ public class ReviewListActivity extends SecondAbstractActivity {
     }
 
     @Override
+    protected int getBackButtonId() {
+        return R.id.back_button;
+    }
+
+    @Override
     protected String getHeaderText() {
         return "Your Reviews";
     }
@@ -48,8 +54,7 @@ public class ReviewListActivity extends SecondAbstractActivity {
 
     @Override
     protected void setup() {
-        Button back = findViewById(R.id.back_button);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        back.setOnClickListener(v -> finish());
     }
 }

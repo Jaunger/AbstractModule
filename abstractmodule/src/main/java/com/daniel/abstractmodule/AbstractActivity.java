@@ -15,6 +15,7 @@ public abstract class AbstractActivity extends AppCompatActivity {
 
     protected TextView headerText;
     protected Button primaryButton, secondaryButton;
+    protected AppCompatImageView imageView;
 
     @LayoutRes
     protected abstract int getLayoutResId();
@@ -61,5 +62,7 @@ public abstract class AbstractActivity extends AppCompatActivity {
         }
 
         setup();
+        setBackground(R.drawable.img_background, imageView);
+
     }
 }

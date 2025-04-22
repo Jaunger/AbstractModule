@@ -14,11 +14,6 @@ public class LeaderboardActivity extends SecondAbstractActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Button backButton = findViewById(R.id.back_button);
-        backButton.setOnClickListener(v -> {
-            finish();
-
-        });
     }
     @Override
     protected int getLayoutResId() {
@@ -33,6 +28,11 @@ public class LeaderboardActivity extends SecondAbstractActivity {
     @Override
     protected int getRecyclerViewId() {
         return R.id.recycler_view;
+    }
+
+    @Override
+    protected int getBackButtonId() {
+        return R.id.back_button;
     }
 
     @Override

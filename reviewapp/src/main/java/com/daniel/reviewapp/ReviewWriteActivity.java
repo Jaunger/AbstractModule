@@ -1,6 +1,7 @@
 package com.daniel.reviewapp;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,9 +37,9 @@ public class ReviewWriteActivity extends AbstractActivity {
 
     @Override
     protected void setup() {
-        AppCompatImageView background = findViewById(R.id.img_background);
-        setBackground(R.drawable.img_background, background);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        imageView = findViewById(R.id.img_background);
         companyNameText = findViewById(R.id.txt_company_name);
         reviewInput = findViewById(R.id.edit_review);
         submitNextButton = findViewById(R.id.btn_submit_next);

@@ -1,6 +1,7 @@
 package com.daniel.clicker;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class ClickActivity extends AbstractActivity {
 
     @Override
     protected void setup() {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        imageView = findViewById(R.id.img_background);
         nameInput = findViewById(R.id.input_name);
         counterText = findViewById(R.id.counter_view);
         Button clickButton = findViewById(R.id.btn_click);
@@ -32,7 +35,6 @@ public class ClickActivity extends AbstractActivity {
             counterText.setText("Clicks: " + clickCount);
         });
 
-        setBackground(R.drawable.img_background, findViewById(R.id.img_background));
         finishButton.setOnClickListener(v -> {
             String name = nameInput.getText().toString().trim();
             if (name.isEmpty()) {
