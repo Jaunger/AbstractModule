@@ -5,10 +5,10 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="clicker">
+      <SelectionState runConfigName="reviewapp">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="reviewapp">
+      <SelectionState runConfigName="clicker">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

@@ -43,6 +43,7 @@ public class ClickActivity extends AbstractActivity {
             LeaderboardStore.addEntry(name, clickCount);
             nameInput.setText("");
             clickCount = 0;
+            counterText.setText("Clicks: " + clickCount);
             Intent intent = new Intent(this, LeaderboardActivity.class);
             startActivity(intent);
         });
