@@ -62,7 +62,6 @@ public abstract class AbstractActivity extends AppCompatActivity {
         }
 
         setup();
-        setBackground(R.drawable.img_background, imageView);
 
     }
 }

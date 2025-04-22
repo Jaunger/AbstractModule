@@ -46,7 +46,7 @@ public class ReviewWriteActivity extends AbstractActivity {
         finishButton = findViewById(R.id.btn_finish);
 
         updateCompany();
-
+        setBackground(R.drawable.img_back, imageView);
         submitNextButton.setOnClickListener(v -> {
             String review = reviewInput.getText().toString().trim();
             if (!review.isEmpty()) {

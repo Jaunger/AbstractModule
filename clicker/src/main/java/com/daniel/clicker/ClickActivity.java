@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import androidx.core.content.ContextCompat;
+
 import com.daniel.abstractmodule.AbstractActivity;
 
 public class ClickActivity extends AbstractActivity {
@@ -29,7 +31,10 @@ public class ClickActivity extends AbstractActivity {
         counterText = findViewById(R.id.counter_view);
         Button clickButton = findViewById(R.id.btn_click);
         Button finishButton = findViewById(R.id.btn_finish);
-
+        counterText.setTextColor(ContextCompat.getColor(this, R.color.white));
+        nameInput.setTextColor(ContextCompat.getColor(this, R.color.white));
+        nameInput.setHintTextColor(ContextCompat.getColor(this, R.color.white));
+        setBackground(R.drawable.img_background, imageView);
         clickButton.setOnClickListener(v -> {
             clickCount++;
             counterText.setText("Clicks: " + clickCount);

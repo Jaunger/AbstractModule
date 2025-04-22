@@ -9,7 +9,12 @@ import java.util.List;
 
 public class LeaderboardAdapter extends BaseRecyclerAdapter<LeaderboardEntry> {
     public LeaderboardAdapter(List<LeaderboardEntry> items) {
-        super(items, R.layout.item_leaderboard_entry);
+        super(sortByScoreDescending(items), R.layout.item_leaderboard_entry);
+    }
+
+    private static List<LeaderboardEntry> sortByScoreDescending(List<LeaderboardEntry> items) {
+        items.sort((a, b) -> Integer.compare(b.score, a.score)); // Descending order
+        return items;
     }
 
     @Override
