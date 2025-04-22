@@ -180,8 +180,32 @@ implementation project(":abstractmodule")
 
 ```
 ---
+## Click Game App
 
-## Screenshots and Videos
+### Screenshots
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/a46f5afd-0e17-4505-88f6-e3ddff093439" width="200"/>
+  <img src="https://github.com/user-attachments/assets/85198027-fff0-4fd7-9a78-876361d1a858" width="200"/>
+</p>
+
+---
+
+
+## Form Submission App
+
+### Screenshots
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/604d18b2-cb21-45af-baa2-922909130411" width="200"/>
+  <img src="https://github.com/user-attachments/assets/93635ed9-4a41-4819-b7a9-0377d243eacb" width="200"/>
+</p>
+
+
+
+---
+
+### Demo Video
+
+[Watch the demo](https://drive.google.com/file/d/1baDPnUxqRD-Tg8DtXBfQ756opSUX1x9o/view?usp=sharing)
 
 ---
 
