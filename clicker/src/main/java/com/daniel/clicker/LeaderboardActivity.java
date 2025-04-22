@@ -1,6 +1,7 @@
 package com.daniel.clicker;
 
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -45,5 +46,10 @@ public class LeaderboardActivity extends SecondAbstractActivity {
         return new LeaderboardAdapter(LeaderboardStore.getEntries());
     }
 
+    @Override
+    protected void setup() {
+        super.setup();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+    }
 }

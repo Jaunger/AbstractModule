@@ -17,7 +17,7 @@ public class ClickActivity extends AbstractActivity {
     private int clickCount = 0;
     private EditText nameInput;
     private TextView counterText;
-
+    Button clickButton, finishButton;
     @Override
     protected int getLayoutResId() {
         return R.layout.activity_click;
@@ -26,14 +26,14 @@ public class ClickActivity extends AbstractActivity {
     @Override
     protected void setup() {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        imageView = findViewById(R.id.img_background);
-        nameInput = findViewById(R.id.input_name);
-        counterText = findViewById(R.id.counter_view);
-        Button clickButton = findViewById(R.id.btn_click);
-        Button finishButton = findViewById(R.id.btn_finish);
+
+        initView();
+
+
         counterText.setTextColor(ContextCompat.getColor(this, R.color.white));
         nameInput.setTextColor(ContextCompat.getColor(this, R.color.white));
         nameInput.setHintTextColor(ContextCompat.getColor(this, R.color.white));
+
         setBackground(R.drawable.img_background, imageView);
         clickButton.setOnClickListener(v -> {
             clickCount++;
@@ -56,4 +56,13 @@ public class ClickActivity extends AbstractActivity {
         });
 
     }
+
+    private void initView() {
+        imageView = findViewById(R.id.img_background);
+        nameInput = findViewById(R.id.input_name);
+        counterText = findViewById(R.id.counter_view);
+        clickButton = findViewById(R.id.btn_click);
+        finishButton = findViewById(R.id.btn_finish);
+    }
+
 }
